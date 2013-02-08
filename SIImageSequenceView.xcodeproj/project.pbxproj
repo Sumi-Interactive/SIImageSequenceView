@@ -15,7 +15,6 @@
 		7E6889F2159813BB00FAE5F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6889F1159813BB00FAE5F6 /* AppDelegate.m */; };
 		7E6889F5159813BB00FAE5F6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6889F3159813BB00FAE5F6 /* MainStoryboard.storyboard */; };
 		7E6889F8159813BB00FAE5F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6889F7159813BB00FAE5F6 /* ViewController.m */; };
-		7E688A00159813DB00FAE5F6 /* SIImageSequenceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6889FF159813DB00FAE5F6 /* SIImageSequenceView.m */; };
 		7E688A02159814C100FAE5F6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E688A01159814C100FAE5F6 /* QuartzCore.framework */; };
 		7EA07BCA16C4BA16004523FC /* sumi0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7EA07B8216C4BA16004523FC /* sumi0.jpg */; };
 		7EA07BCB16C4BA16004523FC /* sumi0@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7EA07B8316C4BA16004523FC /* sumi0@2x.jpg */; };
@@ -91,6 +90,7 @@
 		7EA07C1116C4BA16004523FC /* sumi9@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7EA07BC916C4BA16004523FC /* sumi9@2x.jpg */; };
 		7EA07C1316C4BF35004523FC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EA07C1216C4BF35004523FC /* Icon.png */; };
 		7EA07C1516C4BF39004523FC /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EA07C1416C4BF39004523FC /* Icon@2x.png */; };
+		7EA07C1916C4C854004523FC /* SIImageSequenceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA07C1816C4C854004523FC /* SIImageSequenceView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,8 +107,6 @@
 		7E6889F4159813BB00FAE5F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		7E6889F6159813BB00FAE5F6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7E6889F7159813BB00FAE5F6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7E6889FE159813DB00FAE5F6 /* SIImageSequenceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIImageSequenceView.h; sourceTree = "<group>"; };
-		7E6889FF159813DB00FAE5F6 /* SIImageSequenceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIImageSequenceView.m; sourceTree = "<group>"; };
 		7E688A01159814C100FAE5F6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7EA07B8216C4BA16004523FC /* sumi0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sumi0.jpg; sourceTree = "<group>"; };
 		7EA07B8316C4BA16004523FC /* sumi0@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sumi0@2x.jpg"; sourceTree = "<group>"; };
@@ -184,6 +182,8 @@
 		7EA07BC916C4BA16004523FC /* sumi9@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sumi9@2x.jpg"; sourceTree = "<group>"; };
 		7EA07C1216C4BF35004523FC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 		7EA07C1416C4BF39004523FC /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		7EA07C1716C4C854004523FC /* SIImageSequenceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIImageSequenceView.h; sourceTree = "<group>"; };
+		7EA07C1816C4C854004523FC /* SIImageSequenceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIImageSequenceView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,9 +232,8 @@
 		7E6889E7159813BB00FAE5F6 /* SIImageSequenceView */ = {
 			isa = PBXGroup;
 			children = (
+				7EA07C1616C4C854004523FC /* SIImageSequenceView */,
 				7EA07B8116C4BA16004523FC /* Images */,
-				7E6889FE159813DB00FAE5F6 /* SIImageSequenceView.h */,
-				7E6889FF159813DB00FAE5F6 /* SIImageSequenceView.m */,
 				7E6889F0159813BB00FAE5F6 /* AppDelegate.h */,
 				7E6889F1159813BB00FAE5F6 /* AppDelegate.m */,
 				7E6889F3159813BB00FAE5F6 /* MainStoryboard.storyboard */,
@@ -335,6 +334,15 @@
 				7EA07BC916C4BA16004523FC /* sumi9@2x.jpg */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		7EA07C1616C4C854004523FC /* SIImageSequenceView */ = {
+			isa = PBXGroup;
+			children = (
+				7EA07C1716C4C854004523FC /* SIImageSequenceView.h */,
+				7EA07C1816C4C854004523FC /* SIImageSequenceView.m */,
+			);
+			path = SIImageSequenceView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,7 +485,7 @@
 				7E6889EE159813BB00FAE5F6 /* main.m in Sources */,
 				7E6889F2159813BB00FAE5F6 /* AppDelegate.m in Sources */,
 				7E6889F8159813BB00FAE5F6 /* ViewController.m in Sources */,
-				7E688A00159813DB00FAE5F6 /* SIImageSequenceView.m in Sources */,
+				7EA07C1916C4C854004523FC /* SIImageSequenceView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
