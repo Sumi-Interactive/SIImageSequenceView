@@ -32,6 +32,8 @@ typedef NS_ENUM(NSUInteger, SIImageSequenceViewState) {
 
 @property (nonatomic, weak) IBOutlet id <SIImageSequenceViewDelegate> delegate;
 
+- (id)initWithPathFormat:(NSString *)pathFormat bundle:(NSBundle *)bundle;
+
 - (void)spinToFrameIndex:(NSInteger)frameIndex speed:(NSInteger)speed completion:(void (^)(BOOL finished))completion;
 - (void)startFreeSpinWithSpeed:(NSInteger)speed;
 - (void)stopFreeSpin;

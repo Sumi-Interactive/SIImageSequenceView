@@ -29,6 +29,17 @@ static float map(float value, float fromMin, float fromMax, float toMin, float t
 
 @implementation SIImageSequenceView
 
+- (id)initWithPathFormat:(NSString *)pathFormat bundle:(NSBundle *)bundle
+{
+    self = [super initWithImage:nil];
+    if (self) {
+        self.bundle = bundle;
+        self.pathFormat = pathFormat;
+        [self commonInit];
+    }
+    return self;
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
