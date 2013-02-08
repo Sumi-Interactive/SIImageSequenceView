@@ -20,9 +20,11 @@ Typically used for a product 360° span.
 
 **Code:**
 
-	SIImageSequenceView *imageSequenceView = [[SIImageSequenceView alloc] initWithPathFormat:@"%d.jpg" bundle:nil];
-	imageSequenceView.frame = self.view.bounds;
-	[self.view addSubView:imageSequenceView];
+``` objective-c
+SIImageSequenceView *imageSequenceView = [[SIImageSequenceView alloc] initWithPathFormat:@"%d.jpg" bundle:nil];
+imageSequenceView.frame = self.view.bounds;
+[self.view addSubView:imageSequenceView];
+```
 
 **Storyboard:**
 
